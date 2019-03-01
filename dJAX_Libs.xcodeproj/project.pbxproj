@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A4193ABE222936590070D639 /* dJAX_Libs.h in Headers */ = {isa = PBXBuildFile; fileRef = A4193ABC222936590070D639 /* dJAX_Libs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4193AC5222937130070D639 /* djax_lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4193AC4222937130070D639 /* djax_lib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A4193AB9222936590070D639 /* dJAX_Libs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dJAX_Libs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4193ABC222936590070D639 /* dJAX_Libs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dJAX_Libs.h; sourceTree = "<group>"; };
 		A4193ABD222936590070D639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4193AC4222937130070D639 /* djax_lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = djax_lib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		A4193ABB222936590070D639 /* dJAX_Libs */ = {
 			isa = PBXGroup;
 			children = (
+				A4193AC4222937130070D639 /* djax_lib.swift */,
 				A4193ABC222936590070D639 /* dJAX_Libs.h */,
 				A4193ABD222936590070D639 /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					A4193AB8222936590070D639 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4193AC5222937130070D639 /* djax_lib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		A4193AC2222936590070D639 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +272,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dJAX.dJAX-Libs";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +281,7 @@
 		A4193AC3222936590070D639 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
